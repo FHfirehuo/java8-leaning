@@ -21,6 +21,22 @@ public class Stats<T extends Number> {
 		}
 		return sum / nums.length;
 	}
+	
+	// tbis won't work
+	//determine if two averages are the same
+	/*public boolean sameAvg(Stats<T> ob) {
+		if(average() == ob.average()){
+			return true;
+		}
+		return false;
+	}*/
+	
+	public boolean sameAvg(Stats<?> ob) {
+		if(average() == ob.average()){
+			return true;
+		}
+		return false;
+	}
 }
 /**
 除了使用类作为边界之外也可以使用接口。实际上，可以指定多个接口作为边界。此外，边界可以包含一个类和一个或多个接口。对于这种情况，必须首先指定类类型。

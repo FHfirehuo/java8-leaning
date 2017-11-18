@@ -17,6 +17,10 @@ public class BoundsDemo {
 		
 		double w = dob.average();
 		System.out.println("w average is " + w);
+		
+		if(iob.sameAvg(dob)){
+			
+		}
 	}
 
 }
