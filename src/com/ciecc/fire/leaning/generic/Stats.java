@@ -1,7 +1,7 @@
 package com.ciecc.fire.leaning.generic;
 
 /**
- * 
+ * 带边界的通配符泛型
  * @author fire
  *
  * @param <T>

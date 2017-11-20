@@ -1,5 +1,12 @@
 package com.ciecc.fire.leaning.generic;
-
+/***
+ * 
+ * @author fire
+ *
+ * @param <T>
+ * @param <V>
+ * @see SimGen
+ */
 public class TwoGen<T, V> {
 
 	T ob1;
