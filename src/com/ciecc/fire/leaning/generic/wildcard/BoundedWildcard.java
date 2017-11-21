@@ -38,5 +38,21 @@ public class BoundedWildcard {
 		
 		System.out.println("Contents of  tdlocs.");
 		showXY(tdlocs); //ok, is two
+		//showXYZ(tdlocs); //error, not a threeD
+		//showAll(tdlocs); //error, not a fourD
+		
+		FourD fd[] = {
+			new FourD(1, 2, 3, 4),
+			new FourD(6, 8, 14, 8),
+			new FourD(22, 9, 4, 9),
+			new FourD(3, -2, -23, 17),
+		};
+		
+		Coords<FourD> fdlocs = new Coords<>(fd);
+		System.out.println("Contents of fdlocs");
+		// these are all ok
+		showXY(fdlocs);
+		showXYZ(fdlocs);
+		showAll(fdlocs);
 	}
 }
