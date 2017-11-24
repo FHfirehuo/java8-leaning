@@ -24,10 +24,10 @@ public class ByteArrayOutputStreamDemo {
 		System.out.println("Into array");
 		byte b[] = f.toByteArray();
 		for (int i = 0; i < b.length; i++) {
-			System.out.println((char)b[i]);
+			System.out.print((char)b[i]);
 		}
 		
-		System.out.println("\nTo an OutputStream");
+		System.out.println("\nTo an OutputStream()");
 		
 		try(FileOutputStream fos = new FileOutputStream("src/com/ciecc/fire/leaning/io/file/test4.txt")){
 			f.writeTo(fos);
