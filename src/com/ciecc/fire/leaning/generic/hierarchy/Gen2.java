@@ -8,9 +8,3 @@ public class Gen2<T> extends Gen<T> {
 
 }
 
-class Demo {
-	public static void main(String[] args) {
-		Gen2<Integer> num = new Gen2<Integer>(100);
-		num.getob();
-	}
-}
