@@ -1,4 +1,4 @@
-package com.ciecc.fire.leaning.io.file;
+package com.ciecc.fire.leaning.io.output;
 
 import java.io.ByteArrayOutputStream;
 import java.io.FileNotFoundException;

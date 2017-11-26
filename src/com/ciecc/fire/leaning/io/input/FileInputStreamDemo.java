@@ -1,4 +1,4 @@
-package com.ciecc.fire.leaning.io.file;
+package com.ciecc.fire.leaning.io.input;
 
 import java.io.File;
 import java.io.FileInputStream;
