@@ -1,13 +1,8 @@
-package com.ciecc.fire.leaning.io.file;
+package com.ciecc.fire.leaning.io.output;
 
 import java.io.FileOutputStream;
 import java.io.IOException;
 
-/**
- * FileOutputStream 及归属于file有归属于OutputStream但严格意义上应该归属于OutputStream
- * @author fire
- *
- */
 public class FileOutputStreamDemo {
 
 	public static void main(String[] args) {

@@ -1,10 +1,14 @@
-package com.ciecc.fire.leaning.io.input;
+package com.ciecc.fire.leaning.io.file;
 
 import java.io.File;
 import java.io.FileInputStream;
 import java.io.FileNotFoundException;
 import java.io.IOException;
-
+/**
+ * FileInputStream 及归属于file有归属于InputStream但严格意义上应该归属于InputStream
+ * @author fire
+ *
+ */
 public class FileInputStreamDemo {
 
 	public static void main(String[] args) {
