@@ -1,27 +1,30 @@
-package com.ciecc.fire.leaning.io.input;
+package com.ciecc.fire.leaning.io.reader;
 
-import java.io.BufferedInputStream;
-import java.io.ByteArrayInputStream;
+import java.io.BufferedReader;
+import java.io.CharArrayReader;
 
-import com.ciecc.fire.leaning.io.reader.BufferedReaderDemo;
+import com.ciecc.fire.leaning.io.input.BufferedInputStreamDemo;
 
-/***
+/**
+ * 关闭bufferedReader对象也会导致inputStream指定的底层流被关闭。
+ * 与面向字节的流一样，缓冲的输入流也提供了在可用缓冲取中向后移动所需要的基础。
  * 
  * @author fire
- * 
- * @see BufferedReaderDemo
+ * @see BufferedInputStreamDemo
  */
-public class BufferedInputStreamDemo {
+public class BufferedReaderDemo {
 
 	public static void main(String[] args) {
 		String s = "this is a &copy; copyright symbol but this is &copy not.\n";
 
-		byte buf[] = s.getBytes();
+		char buf[] = new char[s.length()];
+		s.getChars(0, s.length(), buf, 0);
 
-		ByteArrayInputStream in = new ByteArrayInputStream(buf);
+		CharArrayReader in = new CharArrayReader(buf);
 		int c;
 		boolean marked = false;
-		try (BufferedInputStream f = new BufferedInputStream(in)) {
+		try (BufferedReader f = new BufferedReader(in)) {
+			f.readLine();
 			while ((c = f.read()) != -1) {
 				switch (c) {
 				case '&':

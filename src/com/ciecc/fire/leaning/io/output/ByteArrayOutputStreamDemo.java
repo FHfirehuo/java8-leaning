@@ -5,6 +5,14 @@ import java.io.FileNotFoundException;
 import java.io.FileOutputStream;
 import java.io.IOException;
 
+import com.ciecc.fire.leaning.io.writer.CharArrayWriteDemo;
+
+/***
+ * 
+ * @author fire
+ *	@see CharArrayWriteDemo
+ *
+ */
 public class ByteArrayOutputStreamDemo {
 
 	public static void main(String[] args) {

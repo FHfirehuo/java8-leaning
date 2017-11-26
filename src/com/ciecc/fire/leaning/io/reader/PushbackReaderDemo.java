@@ -1,27 +1,27 @@
-package com.ciecc.fire.leaning.io.input;
+package com.ciecc.fire.leaning.io.reader;
 
-import java.io.ByteArrayInputStream;
+import java.io.CharArrayReader;
 import java.io.IOException;
-import java.io.PushbackInputStream;
+import java.io.PushbackReader;
 
-import com.ciecc.fire.leaning.io.reader.PushbackReaderDemo;
+import com.ciecc.fire.leaning.io.input.PushbackInputStreamDemo;
 
 /**
  * 
  * @author fire
- * @see PushbackReaderDemo
- * 
+ * @see PushbackInputStreamDemo
  */
-public class PushbackInputStreamDemo {
+public class PushbackReaderDemo {
 
 	public static void main(String[] args) {
 		String s = "if (a == 4) a = 0;\n";
-		byte buf[] = s.getBytes();
-		
-		ByteArrayInputStream in = new ByteArrayInputStream(buf);
+		char buf[] = new char[s.length()];
+		s.getChars(0, s.length(), buf, 0);
+
+		CharArrayReader in = new CharArrayReader(buf);
 		int c;
 		
-		try(PushbackInputStream f = new PushbackInputStream(in)){
+		try(PushbackReader f = new PushbackReader(in)){
 			while ((c=f.read()) != -1) {
 				switch (c) {
 				case '=':
@@ -42,5 +42,4 @@ public class PushbackInputStreamDemo {
 			e.printStackTrace();
 		}
 	}
-
 }

@@ -4,10 +4,13 @@ import java.io.CharArrayWriter;
 import java.io.FileWriter;
 import java.io.IOException;
 
+import com.ciecc.fire.leaning.io.output.ByteArrayOutputStreamDemo;
+
 /**
  * close() 方法对chararraywrite没有影响
  * @author fire
- *
+ * 
+ * @see ByteArrayOutputStreamDemo
  */
 public class CharArrayWriteDemo {
 
