@@ -6,6 +6,7 @@ import java.io.FileOutputStream;
 import java.io.IOException;
 import java.io.ObjectInputStream;
 import java.io.ObjectOutputStream;
+import java.io.PrintWriter;
 import java.io.Serializable;
 
 /**
@@ -16,16 +17,19 @@ import java.io.Serializable;
 public class SerializationDemo {
 
 	public static void main(String[] args) {
-		try(ObjectOutputStream objOStrm = new ObjectOutputStream(new FileOutputStream("serial"))){
+		try(ObjectOutputStream objOStrm = new ObjectOutputStream(new FileOutputStream("serial.txt"));
+				PrintWriter pw = new PrintWriter(new FileOutputStream("serial2.txt"))){
 			MyClass obj = new MyClass("hello", -7, 2.7e10);
 			System.out.println("obj" + obj);
 			objOStrm.writeObject(obj);
+			pw.println(obj);
 		}catch (Exception e) {
 			System.out.println("" + e);
 		}
 		
-		try (ObjectInputStream objIstrm = new ObjectInputStream(new FileInputStream("serial"))){
-			MyClass obj2 = (MyClass) objIstrm.readObject();
+		try (ObjectInputStream objIstrm = new ObjectInputStream(new FileInputStream("serial.txt"));
+				ObjectInputStream objIstrm2 = new ObjectInputStream(new FileInputStream("serial2.txt"))){
+			MyClass obj2 = (MyClass) objIstrm2.readObject();
 			System.out.println("obj2" + obj2);
 		} catch (FileNotFoundException e) {
 			System.out.println("" + e);

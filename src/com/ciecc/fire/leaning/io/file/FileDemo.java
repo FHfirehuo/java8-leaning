@@ -37,6 +37,7 @@ public class FileDemo {
 		f1.setReadOnly();
 		Path p = f1.toPath();
 		f1.canWrite();
+		p.getFileName();
 		
 	}
 

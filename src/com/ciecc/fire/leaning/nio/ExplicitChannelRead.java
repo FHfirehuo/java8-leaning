@@ -24,7 +24,7 @@ public class ExplicitChannelRead {
 		try (SeekableByteChannel fByteChannel = Files.newByteChannel(filepath)){
 
 			ByteBuffer mbuf = ByteBuffer.allocate(128);
-			
+			mbuf.reset();
 			do{
 				
 			}while(count != -1);

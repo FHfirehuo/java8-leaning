@@ -17,6 +17,10 @@ public class ByteArrayInputStreamDemo {
 		byte b[] = tmp.getBytes();
 		ByteArrayInputStream input1 = new ByteArrayInputStream(b);
 		ByteArrayInputStream input2 = new ByteArrayInputStream(b, 0, 3);
+		int a = input1.read();
+		System.out.println(a);
+		int d = input2.read();
+		System.out.println(d);
 	
 	}
 }

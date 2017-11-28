@@ -4,7 +4,7 @@ public class EnmuDemo3 {
 
 	public static void main(String[] args) {
 
-		Apple ap;
+		//Apple ap;
 		System.out.println("Winesap consts " + Apple.Winesap.getPrice() + " cents \n");
 
 		System.out.println("All apple prices:");
