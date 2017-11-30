@@ -14,7 +14,7 @@ import com.ciecc.fire.leaning.io.reader.BufferedReaderDemo;
 public class BufferedInputStreamDemo {
 
 	public static void main(String[] args) {
-		String s = "this is a &copy; copyright symbol but this is &copy not.\n";
+		String s = "this is 刘一 a &copy; copyright symbol but this is &copy not.\n";
 
 		byte buf[] = s.getBytes();
 

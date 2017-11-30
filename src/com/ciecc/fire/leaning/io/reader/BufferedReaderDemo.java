@@ -15,7 +15,7 @@ import com.ciecc.fire.leaning.io.input.BufferedInputStreamDemo;
 public class BufferedReaderDemo {
 
 	public static void main(String[] args) {
-		String s = "this is a &copy; copyright symbol but this is &copy not.\n";
+		String s = "this 刘燚 is a &copy; copyright symbol but this is &copy not.\n";
 
 		char buf[] = new char[s.length()];
 		s.getChars(0, s.length(), buf, 0);
@@ -24,7 +24,7 @@ public class BufferedReaderDemo {
 		int c;
 		boolean marked = false;
 		try (BufferedReader f = new BufferedReader(in)) {
-			f.readLine();
+			//f.readLine();
 			while ((c = f.read()) != -1) {
 				switch (c) {
 				case '&':
@@ -65,7 +65,7 @@ public class BufferedReaderDemo {
 				}
 			}
 		} catch (Exception e) {
-
+			System.out.println(e);
 		}
 	}
 }

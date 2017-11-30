@@ -9,7 +9,7 @@ public class FileInputStreamDemo {
 
 	public static void main(String[] args) {
 		int size;
-		File f1 = new File("src/com/ciecc/fire/leaning/io/file/test.txt");
+		File f1 = new File("file.txt");
 		//System.out.println(f1.getAbsolutePath());
 		try(FileInputStream f = new FileInputStream(f1)){
 			System.out.println("Total Available " + (size = f.available()));

@@ -15,9 +15,9 @@ public class SequenceInputStreamDemo {
 		int c;
 		Vector<String> files = new Vector<>();
 		
-		files.addElement("src/com/ciecc/fire/leaning/io/file/test0.txt");
-		files.addElement("src/com/ciecc/fire/leaning/io/file/test1.txt");
-		files.addElement("src/com/ciecc/fire/leaning/io/file/test2.txt");
+		files.addElement("test0.txt");
+		files.addElement("test1.txt");
+		files.addElement("test2.txt");
 		
 		InputStreamEnumerator ise = new InputStreamEnumerator(files);
 		InputStream input = new SequenceInputStream(ise);

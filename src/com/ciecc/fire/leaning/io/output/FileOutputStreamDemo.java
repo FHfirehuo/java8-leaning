@@ -17,7 +17,7 @@ public class FileOutputStreamDemo {
 		FileOutputStream f2 = null;
 		
 		try {
-			f0 = new FileOutputStream("src/com/ciecc/fire/leaning/io/file/test0.txt");
+			f0 = new FileOutputStream("src/com/ciecc/fire/leaning/io/file/test0.txt",true);
 			f1 = new FileOutputStream("src/com/ciecc/fire/leaning/io/file/test1.txt");
 			f2 = new FileOutputStream("src/com/ciecc/fire/leaning/io/file/test2.txt");
 			
