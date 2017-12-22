@@ -23,7 +23,6 @@ public class DirList {
 				System.out.println(entry.getName(1));
 			}
 		} catch (Exception e) {
-			// TODO: handle exception
 		}
 		
 	}

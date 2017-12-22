@@ -24,7 +24,6 @@ public class ExplicitChannelRead2 {
 				}
 			} while (count != -1);
 		} catch (Exception e) {
-			// TODO: handle exception
 		}
 	}
 

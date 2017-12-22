@@ -21,7 +21,6 @@ public class Mimahuoqu {
 	 */
 
 	public static void main(String[] args) {
-		// TODO Auto-generated method stub
 		Scanner sc = new Scanner(System.in);
 		int n = sc.nextInt();
 		sc.nextLine();
@@ -36,7 +35,6 @@ public class Mimahuoqu {
 
 	// 分解字符串
 	private static void transform(String str) {
-		// TODO Auto-generated method stub
 		int n = (str.length() + 5) / 6;
 		char[][] c = new char[n][];
 		for (int i = 0; i < n; i++) {
@@ -54,7 +52,6 @@ public class Mimahuoqu {
 
 	// 计算
 	private static void cal(char[][] c) {
-		// TODO Auto-generated method stub
 		int last = c[c.length-1].length;
 		int[] n = new int[6];
 		for (int i = 0; i < 6; i++) {
@@ -69,7 +66,6 @@ public class Mimahuoqu {
 	}
 	//缩位
 	private static void condense(int[] n) {
-		// TODO Auto-generated method stub
 		StringBuffer sb = new StringBuffer();
 		for(int i = 0;i<6;i++){
 			char[] cc = (""+n[i]).toCharArray();
@@ -79,7 +75,6 @@ public class Mimahuoqu {
 	}
 
 	private static char con(char[] cc) {
-		// TODO Auto-generated method stub
 		if(cc.length<=1){
 			return cc[0];
 		}

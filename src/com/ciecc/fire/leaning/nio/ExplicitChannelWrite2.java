@@ -20,7 +20,6 @@ public class ExplicitChannelWrite2 {
 			
 			
 		} catch (Exception e) {
-			// TODO: handle exception
 		}
 	}
 }

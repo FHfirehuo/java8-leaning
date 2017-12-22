@@ -31,10 +31,8 @@ public class Client {
 				System.out.println("我是客户端，服务器说：" + info);
 			}
 		} catch (UnknownHostException e) {
-			// TODO Auto-generated catch block
 			e.printStackTrace();
 		} catch (IOException e) {
-			// TODO Auto-generated catch block
 			e.printStackTrace();
 		}finally{
 			try {

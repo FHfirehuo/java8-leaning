@@ -21,7 +21,6 @@ public class ShowFile {
 				}
 			} while (i != -1);
 		} catch (Exception e) {
-			// TODO: handle exception
 		}
 	}
 }

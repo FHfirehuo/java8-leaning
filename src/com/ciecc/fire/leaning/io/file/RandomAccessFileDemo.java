@@ -17,10 +17,8 @@ public class RandomAccessFileDemo {
 			raf.seek(10);//移动指针
 			raf.close();//文件读写完一定要关闭，否则可能会有意想不到的后果
 		} catch (FileNotFoundException e) {
-			// TODO Auto-generated catch block
 			e.printStackTrace();
 		} catch (IOException e) {
-			// TODO Auto-generated catch block
 			e.printStackTrace();
 		}
 		

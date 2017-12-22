@@ -71,7 +71,6 @@ public class TestNio {
 				}
 			}
 		} catch (IOException e) {
-			// TODO Auto-generated catch block
 			e.printStackTrace();
 		}
 	}
@@ -84,7 +83,6 @@ public class TestNio {
 			fcout.write(wBuffer.wrap(line.getBytes()), fcout.size());
 
 		} catch (IOException e) {
-			// TODO Auto-generated catch block
 			e.printStackTrace();
 		}
 	}

@@ -38,7 +38,6 @@ public class serverThread extends Thread {
 			pw.close();
 			//socket.close();
 		} catch (IOException e) {
-			// TODO Auto-generated catch block
 			e.printStackTrace();
 		}
 

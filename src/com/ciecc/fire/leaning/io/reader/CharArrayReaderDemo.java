@@ -23,7 +23,6 @@ public class CharArrayReaderDemo {
 			
 			System.out.println();
 		} catch (Exception e) {
-			// TODO: handle exception
 		}
 		
 		
@@ -35,7 +34,6 @@ public class CharArrayReaderDemo {
 			
 			System.out.println();
 		} catch (Exception e) {
-			// TODO: handle exception
 		}
 	}
 
