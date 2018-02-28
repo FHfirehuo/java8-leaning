@@ -9,6 +9,8 @@ import java.util.concurrent.locks.ReentrantLock;
 /**
  * 下面是一个实际项目(web application)中比较常见的，多生产者单消费者模型示例。
  * @author fire
+ * 
+ * @see ExecuteConsumerProviderDemo
  *
  */
 public class ReentrantLockConditionDemo {
