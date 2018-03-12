@@ -1,10 +1,14 @@
 package com.ciecc.fire.leaning.concurrent;
 
+import java.util.concurrent.BrokenBarrierException;
 import java.util.concurrent.CountDownLatch;
+import java.util.concurrent.CyclicBarrier;
 
 public class CDLDemo {
 
-	public static void main(String[] args) {
+	public static void main(String[] args) throws InterruptedException, BrokenBarrierException {
+		CyclicBarrier c = new CyclicBarrier(1);
+		c.await();
 		CountDownLatch cdl = new CountDownLatch(5);
 		System.out.println("Starting");
 		
